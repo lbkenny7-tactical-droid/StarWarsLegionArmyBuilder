@@ -1,21 +1,18 @@
 const express = require('express');
 const mysql = require('mysql2');
-const cors = require('cors');  // Import the cors package
+const cors = require('cors');
 const app = express();
 const port = 3000;
 
-// Use the CORS middleware
-app.use(cors());  // This allows all origins. You can customize it below.
+app.use(cors());
 
-// MySQL connection setup
 const db = mysql.createConnection({
   host: 'localhost',
-  user: 'root', // Your MySQL username
-  password: 'Burrnet7', // Your MySQL password
+  user: 'root',
+  password: 'Burrnet7',
   database: 'starwarslegion_database'
 });
 
-// Connect to the database
 db.connect((err) => {
   if (err) {
     console.error('error connecting to the database: ' + err.stack);
@@ -24,22 +21,33 @@ db.connect((err) => {
   console.log('connected to the database as id ' + db.threadId);
 });
 
-// Route to fetch data from 'Units' table
-app.get('/api/data', (req, res) => {
-  const query = 'SELECT * FROM Separatist_Units';  // Fetch all rows from the "Units" table
+app.get('/api/separatist-units', (req, res) => {
+  const query = 'SELECT * FROM separatist_units';
   db.query(query, (err, results) => {
     if (err) {
-      console.error('Error fetching data: ', err);
+      console.error('Error fetching data:', err);
       return res.status(500).send('Error fetching data');
     }
-    res.json(results);  // Send the results as a JSON response
+    res.json(results);
   });
 });
 
-// Serve static files (HTML, CSS, JS)
-app.use(express.static('public'));  // Assumes your HTML is in a 'public' folder
+app.use(express.static('public'));
 
-// Start the server
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 });
+
+fetch('http://localhost:3000/api/separatist-units')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json();
+  })
+  .then(data => {
+    console.log(data);
+  })
+  .catch(error => {
+    console.error('Error fetching data:', error);
+  });

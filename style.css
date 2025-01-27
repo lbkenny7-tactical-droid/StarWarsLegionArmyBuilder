@@ -50,9 +50,9 @@ body {
   }
   
   .column {
-    width: 32%; /* Each column takes up about a third of the width */
+    width: 32%; 
     padding: 10px;
-    box-sizing: border-box; /* Ensures padding doesn't affect the total width */
-    border: 1px solid #ccc; /* Optional border for visualization */
+    box-sizing: border-box; 
+    border: 1px solid #ccc; 
   }
   
