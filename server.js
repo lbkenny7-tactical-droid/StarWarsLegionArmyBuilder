@@ -24,15 +24,14 @@ db.connect((err) => {
   console.log('connected to the database as id ' + db.threadId);
 });
 
-// Route to fetch data from 'Units' table
-app.get('/api/data', (req, res) => {
-  const query = 'SELECT * FROM Separatist_Units';  // Fetch all rows from the "Units" table
+app.get('/api/separatist-units', (req, res) => {
+  const query = 'SELECT * FROM separatist_units';  // Replace with your actual table name
   db.query(query, (err, results) => {
     if (err) {
-      console.error('Error fetching data: ', err);
+      console.error('Error fetching data:', err);
       return res.status(500).send('Error fetching data');
     }
-    res.json(results);  // Send the results as a JSON response
+    res.json(results);  // Send data as JSON
   });
 });
 
@@ -43,3 +42,19 @@ app.use(express.static('public'));  // Assumes your HTML is in a 'public' folder
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 });
+
+fetch('http://localhost:3000/api/separatist-units')
+  .then(response => {
+    // Check if the response is not OK (e.g., 404 or 500 errors)
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json();
+  })
+  .then(data => {
+    // Handle the JSON data
+    console.log(data);
+  })
+  .catch(error => {
+    console.error('Error fetching data:', error);
+  });
