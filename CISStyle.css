@@ -62,82 +62,66 @@ body {
     border: 1px solid #ccc;
   }
 
-/* Style for the main buttons */
-.button {
-  display: inline-flex;
-  justify-content: space-between; /* Space between text and image */
-  align-items: center; /* Vertically center the content */
-  padding: 10px 20px;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
-  margin-bottom: 10px;
-  background-color: #007BFF;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
 .button:hover {
-  background-color: #0056b3; /* Darken color when hovered */
+  background-color: #0056b3;
 }
 
-/* Style for the image inside the button */
+
 .button img {
-  max-width: 50px; /* Smaller image */
-  height: auto;    /* Maintain aspect ratio */
-  margin-left: 10px;  /* Adjust space between text and image */
+  max-width: 50px;
+  height: auto;
+  margin-left: 10px;
 }
 
-/* Style for the text inside the button */
+
 .button .button-text {
-  font-weight: bold; /* Bold text */
-  text-align: left; /* Ensure text stays left-aligned */
+  font-weight: bold;
+  text-align: left;
 }
 
 #selected-image-container {
-  position: sticky;         /* Make the container sticky */
-  top: 20px;                /* Set how far from the top the container will "stick" */
-  max-width: 100%;          /* Ensure image does not overflow horizontally */
-  text-align: center;       /* Optional: Center the content (image) inside the container */
-  z-index: 10;              /* Ensure it appears above other content */
+  position: sticky;         
+  top: 20px;                
+  max-width: 100%;          
+  text-align: center;       
+  z-index: 10;              
 }
 
 
 .selected-image {
-  max-width: 100%;          /* Make sure the image is responsive */
-  height: auto;             /* Keep the aspect ratio */
+  max-width: 100%;          
+  height: auto;             
 }
 
-/* Style for the button containers to align buttons properly */
 .button-container {
   display: flex;
-  align-items: center; /* Vertically align the buttons */
-  gap: 10px;           /* Space between buttons */
-  margin-bottom: 10px;  /* Space between button groups */
+  align-items: center; 
+  gap: 10px;           
+  margin-bottom: 10px;
 }
 
-/* Container for the plus button */
 .circle-button {
-  width: 40px;      /* Adjust the size of the button */
-  height: 40px;     /* Ensure the button is circular */
-  border-radius: 50%; /* Circle shape */
+  width: 40px;      
+  height: 40px;     
+  border-radius: 50%; 
   background-color: #007BFF;
   color: white;
-  font-size: 24px;   /* Adjust the size of the text */
+  font-size: 24px;   
   display: flex;
-  justify-content: center;
+  justify-content: center;  
   align-items: center;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s;
-  margin-left: 10px;  /* Space between the commander button and the plus button */
+  margin-left: 10px;
+  padding: 10px 20px; 
+  margin-bottom: 15px; 
 }
 
 .circle-button:hover {
-  background-color: #0056b3; /* Darken color when hovered */
+  background-color: #0056b3; 
 }
 
-/* Style for commander buttons */
 .commander-button {
   padding: 10px 20px;
   background-color: #007BFF;
@@ -148,9 +132,37 @@ body {
   gap: 10px;
   cursor: pointer;
   width: 75%;
+  color: white;
+  font-size: 16px;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
 
-/* Optional: Add some space between the commander buttons */
 .commander-button + .button {
   margin-top: 10px;
+}
+
+.current-selection-container {
+  padding: 20px;
+  background-color: #f0f0f0; /* Light gray background */
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-top: 20px; /* Adds space between the content and the next element */
+}
+
+#click-count {
+  font-weight: bold;
+  color: #007BFF;
+}
+
+#added-units {
+  margin-top: 15px;
+}
+
+.unit-details-container {
+  padding: 20px;
+  background-color: brown; /* Light gray background */
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-top: 2px; /* Adds space between the content and the next element */
 }

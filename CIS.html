@@ -19,10 +19,9 @@
   
   <main>
     <div class="columns">
-      <!-- Column for dynamically created buttons -->
       <div class="column">
         <p class="subheaders">Commanders</p>
-        <div id="button-container"></div> <!-- Container for buttons -->
+        <div id="button-container"></div>
       </div>
       <div class="column">
         <p class="subheaders">Cards</p>
@@ -30,11 +29,14 @@
       </div>
       <div class="column">
         <p class="subheaders">Current Selection</p>
-        <div id="added-units"></div>
+        <div class="current-selection-container">
+          <p>Commander Count: <span id="commander-count">0</span>/2</p>
+          <div id="added-units"></div>
+        </div>
       </div>
     </div>
   </main>
-      
+
   
 
   <footer>
@@ -42,71 +44,93 @@
   </footer>
 
   <script>
-    // Fetch data from the backend
+    let commanderCount = 0;
+    
+  
     fetch('http://localhost:3000/api/data')
       .then(response => response.json())
       .then(data => {
-        // Select the container where the buttons will be placed
-        const buttonContainer = document.getElementById('button-container');  // Using ID selector for clarity
-        
-        // Clear the existing buttons (if any)
+        const buttonContainer = document.getElementById('button-container');
+
         buttonContainer.innerHTML = '';
 
-        // Loop through the data and generate the buttons dynamically
         data.forEach(unit => {
-          // Create the button container
           const unitButtonContainer = document.createElement('div');
           unitButtonContainer.classList.add('button-container');
 
-          // Create the commander button
           const commanderButton = document.createElement('button');
           commanderButton.classList.add('button', 'commander-button');
-          commanderButton.setAttribute('data-image', `${unit.unitcard_image}`);  // Ensure 'unitcard_image' field exists
+          commanderButton.setAttribute('data-image', `${unit.unitcard_image}`);
+          commanderButton.setAttribute('data-name', unit.name);
+          commanderButton.setAttribute('data-description', unit.description);
+          commanderButton.setAttribute('data-points', unit.points);
 
-          // Add text to the button
           const buttonText = document.createElement('span');
           buttonText.classList.add('button-text');
-          buttonText.textContent = unit.name;  // Ensure 'name' field exists
+          buttonText.textContent = unit.name;
           commanderButton.appendChild(buttonText);
 
-          // Add image to the button
           const buttonImage = document.createElement('img');
-          buttonImage.src = `${unit.toy_image}`;  // Ensure 'toy_image' field exists
+          buttonImage.src = `${unit.toy_image}`;
           buttonImage.alt = unit.name;
           buttonImage.classList.add('button-image');
           commanderButton.appendChild(buttonImage);
 
-          // Create the add button (+)
           const addButton = document.createElement('button');
           addButton.classList.add('button', 'circle-button');
-          addButton.id = `add-${unit.id}`;  // Ensure 'id' is unique and exists
+          addButton.id = `add-${unit.id}`;
           addButton.textContent = '+';
 
-          // Append buttons to the container
+          addButton.setAttribute('data-name', unit.name);
+          addButton.setAttribute('data-description', unit.description);
+          addButton.setAttribute('data-points', unit.points);
+
           unitButtonContainer.appendChild(commanderButton);
           unitButtonContainer.appendChild(addButton);
 
-          // Add the unit button container to the parent container
           buttonContainer.appendChild(unitButtonContainer);
 
-          // Add event listener to the commander button
           commanderButton.addEventListener('click', () => {
-            // Get the unitcard image from the button's data attribute
             const unitCardImage = commanderButton.getAttribute('data-image');
+            const unitName = commanderButton.getAttribute('data-name');
+            const unitDescription = commanderButton.getAttribute('data-description');
+            const unitPoints = commanderButton.getAttribute('data-points');
 
-            // Select the cards display container
             const unitCardDisplay = document.getElementById('unit-card-display');
 
-            // Create an image element to display in the "Cards" column
             const unitImage = document.createElement('img');
             unitImage.src = unitCardImage;
-            unitImage.alt = unit.name;
-            unitImage.classList.add('unit-card-image');  // Add a class for styling if needed
+            unitImage.alt = unitName;
+            unitImage.classList.add('unit-card-image');
 
-            // Clear the "Cards" column and add the new image
-            unitCardDisplay.innerHTML = '';  // Clear any existing content
+            unitCardDisplay.innerHTML = '';
             unitCardDisplay.appendChild(unitImage);
           });
+
+
+          addButton.addEventListener('click', () => {
+            const unitDetailsContainer = document.createElement('div');
+            unitDetailsContainer.classList.add('unit-details-container');
+
+            const name = document.createElement('h3');
+            name.textContent = `${addButton.getAttribute('data-name')}`;
+            unitDetailsContainer.appendChild(name);
+
+            const description = document.createElement('p');
+            description.textContent = `${addButton.getAttribute('data-description')}`;
+            unitDetailsContainer.appendChild(description);
+
+            const points = document.createElement('p');
+            points.textContent = `Points: ${addButton.getAttribute('data-points')}`;
+            unitDetailsContainer.appendChild(points);
+
+            const unitDetails = document.getElementById('added-units');
+            unitDetails.appendChild(unitDetailsContainer);
+
+            commanderCount++;
+            document.getElementById('commander-count').textContent = commanderCount;
+        });
+
         });
       })
       .catch(error => {

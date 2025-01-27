@@ -1,21 +1,18 @@
 const express = require('express');
 const mysql = require('mysql2');
-const cors = require('cors');  // Import the cors package
+const cors = require('cors');
 const app = express();
 const port = 3000;
 
-// Use the CORS middleware
-app.use(cors());  // This allows all origins. You can customize it below.
+app.use(cors());
 
-// MySQL connection setup
 const db = mysql.createConnection({
   host: 'localhost',
-  user: 'root', // Your MySQL username
-  password: 'Burrnet7', // Your MySQL password
+  user: 'root',
+  password: 'Burrnet7',
   database: 'starwarslegion_database'
 });
 
-// Connect to the database
 db.connect((err) => {
   if (err) {
     console.error('error connecting to the database: ' + err.stack);
@@ -25,34 +22,30 @@ db.connect((err) => {
 });
 
 app.get('/api/separatist-units', (req, res) => {
-  const query = 'SELECT * FROM separatist_units';  // Replace with your actual table name
+  const query = 'SELECT * FROM separatist_units';
   db.query(query, (err, results) => {
     if (err) {
       console.error('Error fetching data:', err);
       return res.status(500).send('Error fetching data');
     }
-    res.json(results);  // Send data as JSON
+    res.json(results);
   });
 });
 
-// Serve static files (HTML, CSS, JS)
-app.use(express.static('public'));  // Assumes your HTML is in a 'public' folder
+app.use(express.static('public'));
 
-// Start the server
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 });
 
 fetch('http://localhost:3000/api/separatist-units')
   .then(response => {
-    // Check if the response is not OK (e.g., 404 or 500 errors)
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }
     return response.json();
   })
   .then(data => {
-    // Handle the JSON data
     console.log(data);
   })
   .catch(error => {
