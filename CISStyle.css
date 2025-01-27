@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #3734eb;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    color: white;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  main {
+    padding: 20px;
+    background-color: #201f52;
+  }
+
+  .subheaders {
+    color: white;
+    align-content: center;
+  }
+  
+  footer {
+    background-color: #3734eb;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .columns {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .column {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+  }
+
+/* Style for the main buttons */
+.button {
+  display: inline-flex;
+  justify-content: space-between; /* Space between text and image */
+  align-items: center; /* Vertically center the content */
+  padding: 10px 20px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  background-color: #007BFF;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #0056b3; /* Darken color when hovered */
+}
+
+/* Style for the image inside the button */
+.button img {
+  max-width: 50px; /* Smaller image */
+  height: auto;    /* Maintain aspect ratio */
+  margin-left: 10px;  /* Adjust space between text and image */
+}
+
+/* Style for the text inside the button */
+.button .button-text {
+  font-weight: bold; /* Bold text */
+  text-align: left; /* Ensure text stays left-aligned */
+}
+
+#selected-image-container {
+  position: sticky;         /* Make the container sticky */
+  top: 20px;                /* Set how far from the top the container will "stick" */
+  max-width: 100%;          /* Ensure image does not overflow horizontally */
+  text-align: center;       /* Optional: Center the content (image) inside the container */
+  z-index: 10;              /* Ensure it appears above other content */
+}
+
+
+.selected-image {
+  max-width: 100%;          /* Make sure the image is responsive */
+  height: auto;             /* Keep the aspect ratio */
+}
+
+/* Style for the button containers to align buttons properly */
+.button-container {
+  display: flex;
+  align-items: center; /* Vertically align the buttons */
+  gap: 10px;           /* Space between buttons */
+  margin-bottom: 10px;  /* Space between button groups */
+}
+
+/* Container for the plus button */
+.circle-button {
+  width: 40px;      /* Adjust the size of the button */
+  height: 40px;     /* Ensure the button is circular */
+  border-radius: 50%; /* Circle shape */
+  background-color: #007BFF;
+  color: white;
+  font-size: 24px;   /* Adjust the size of the text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 10px;  /* Space between the commander button and the plus button */
+}
+
+.circle-button:hover {
+  background-color: #0056b3; /* Darken color when hovered */
+}
+
+/* Style for commander buttons */
+.commander-button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  width: 75%;
+}
+
+/* Optional: Add some space between the commander buttons */
+.commander-button + .button {
+  margin-top: 10px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Website</h1>
+    <nav>
+      <ul>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <h2>Home Page Content</h2>
+    <p>This is the homepage of the website.</p>
+    <ul id="data-list"></ul>  <!-- Add this unordered list to display data -->
+    <li><a href="CIS.html">CIS</a></li>
+    <li><a href="GAR.html">GAR</a></li>
+    <li><a href="Empire.html">Empire</a></li>
+    <li><a href="Rebels.html">Rebels</a></li>
+    <li><a href="ShadowCollective.html">Shadow Collective</a></li>
+
+    <h2>Separatist Units List</h2>
+    <ul id="separatist_units-list">
+      <!-- Data will be appended here -->
+    </ul>
+
+    <script>
+      // Fetch data from the backend
+      fetch('http://localhost:3000/api/data')
+        .then(response => response.json())
+        .then(data => {
+          const unitsList = document.getElementById('separatist_units-list');
+          data.forEach(unit => {
+            const li = document.createElement('li');
+            li.textContent = `${unit.military_rank} - ${unit.name} - ${unit.description} - ${unit.points}`;
+            unitsList.appendChild(li);
+          });
+        })
+        .catch(error => console.error('Error fetching data:', error));
+    </script>
+  </main>
+
+  <footer>
+    <p>Created by You</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

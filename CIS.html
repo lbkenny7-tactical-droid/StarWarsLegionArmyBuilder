@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CIS</title>
+  <link rel="stylesheet" href="CISStyle.css">
+</head>
+<body>
+  <header>
+    <h1>CIS</h1>
+    <nav>
+      <ul>
+        <li><a href="WelcomePage.html">Welcome</a></li>
+        <li><a href="CIS.html">CIS</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <div class="columns">
+      <div class="column">
+        <p class="subheaders">Commanders</p>
+        <div class="button-container">
+          <button class="button commander-button" data-image="Pictures/CountDookuUnitCard.jpg">
+            <span class="button-text">Count Dooku (Darth Tyranus)</span>
+            <img src="Pictures/CountDookuToy.jpg" alt="Image" class="button-image">
+          </button>
+          <button class="button circle-button" id="add-dooku">+</button>
+        </div>
+        <div class="button-container">
+        <button class="button commander-button" data-image="Pictures/GeneralGrievousUnitCard.jpg">
+          <span class="button-text">General Grievous (Sinister Cyborg)</span>
+          <img src="Pictures/GeneralGrievousToy.jpg" alt="Image" class="button-image">
+        </button>
+        <button class="button circle-button">+</button>
+        </div>
+        <div class="button-container">
+        <button class="button commander-button" data-image="Pictures/PoggleUnitCard.jpg">
+          <span class="button-text">Poggle The Lesser (Public Leader Of The Geonocians)</span>
+          <img src="Pictures/PoggleToy.jpg" alt="Image" class="button-image">
+        </button>
+        <button class="button circle-button">+</button>
+        </div>
+        <div class="button-container">
+        <button class="button commander-button" data-image="Pictures/KalaniUnitCard.jpg">
+          <span class="button-text">Super Tactical Droid (Kalani)</span>
+          <img src="Pictures/KalaniToy.jpg" alt="Image" class="button-image">
+        </button>
+        <button class="button circle-button">+</button>
+        </div>
+        <div class="button-container">
+        <button class="button commander-button" data-image="Pictures/KrakenUnitCard.jpg">
+          <span class="button-text">Super Tactical Droid (Kraken)</span>
+          <img src="Pictures/KrakenToy.jpg" alt="Image" class="button-image">
+        </button>
+        <button class="button circle-button">+</button>
+        </div>
+        <div class="button-container">
+        <button class="button commander-button" data-image="Pictures/STDUnitCard.jpg">
+          <span class="button-text">Super Tactical Droid (Normie)</span>
+          <img src="Pictures/STDToy.jpg" alt="Image" class="button-image">
+        </button>
+        <button class="button circle-button">+</button>
+        </div>
+        <div class="button-container">
+        <button class="button commander-button" data-image="Pictures/TSeriesUnitCard.jpg">
+          <span class="button-text">T-Series (Programmed For Strategy)</span>
+          <img src="Pictures/TSeriesToy.jpg" alt="Image" class="button-image">
+        </button>
+        <button class="button circle-button">+</button>
+        </div>
+        <div class="button-container">
+        <button class="button commander-button" data-image="Pictures/BlackSunVigoUnitCard.jpg">
+          <span class="button-text">Black Sun Vigo</span>
+          <img src="Pictures/BlackSunVigo.jpg" alt="Image" class="button-image">
+        </button>
+        <button class="button circle-button">+</button>
+        </div>
+        <div class="button-container">
+        <button class="button commander-button" data-image="Pictures/PykeSyndicateCapoUnitCard.jpg">
+          <span class="button-text">Pyke Syndicate Capo</span>
+          <img src="Pictures/PykeSyndicateCapoToy.jpg" alt="Image" class="button-image">
+        </button>
+        <button class="button circle-button">+</button>
+        </div>
+      </div>
+      <div class="column">
+        <p class="subheaders">Cards</p>
+        <div id="unit-card-display"></div>
+      </div>
+      <div class="column">
+        <p class="subheaders">Current Selection</p>
+        <div id="added-units"></div>
+      </div>
+    </div>
+  </main>
+      
+  
+
+  <footer>
+    <p>Created by You</p>
+  </footer>
+
+  <script src="CISScript.js"></script>
+</body>
+</html>
