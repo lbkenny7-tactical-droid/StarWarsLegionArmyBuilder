@@ -70,7 +70,6 @@ body {
 .button img {
   max-width: 50px;
   height: auto;
-  margin-left: 10px;
 }
 
 
@@ -192,4 +191,32 @@ body {
   margin-left: 10px;
   padding: 10px 20px; 
   margin-bottom: 5px; 
+}
+
+
+.upgrade-button-container {
+  display: inline-flex;            
+  gap: 10px;                
+  margin-top: 10px;      
+}
+
+.upgrade-circle-button {
+  padding: 10px 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;     
+  align-items: left;
+  margin-bottom: 50px;
+}
+
+.upgrade-image {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.upgrade-circle-button:hover {
+  background-color: #0056b3;
 }

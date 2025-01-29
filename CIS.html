@@ -140,6 +140,31 @@
             const unitDetails = document.getElementById('added-units');
             unitDetails.appendChild(unitDetailsContainer);
 
+            const upgradeButtonContainer = document.createElement('div');
+            upgradeButtonContainer.classList.add('unit-buttons');
+
+            const unitUpgradeList = unit.upgrade_slots;
+            const unitUpgradeSplitList = unitUpgradeList.split(",");
+
+            for (let i = 0; i < unitUpgradeSplitList.length; i++) {
+              const upgradeButton = document.createElement('button');
+              upgradeButton.classList.add('button', 'upgrade-circle-button');
+
+              const upgradeImage = document.createElement('img');
+              upgradeImage.classList.add('upgrade-image');
+              upgradeImage.src = `Pictures/upgrade_${unitUpgradeSplitList[i]}_icon.jpg`;
+
+              upgradeButton.appendChild(upgradeImage);
+
+              upgradeButton.addEventListener('click', () => {
+                  alert(`Upgrade ${unitUpgradeSplitList[i]} selected!`);
+              });
+
+              upgradeButtonContainer.appendChild(upgradeButton);
+            }
+
+            unitDetails.appendChild(upgradeButtonContainer);
+
             commanderCount++;
             document.getElementById('commander-count').textContent = commanderCount;
         });
