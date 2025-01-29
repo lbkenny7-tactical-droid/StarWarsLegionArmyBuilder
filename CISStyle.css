@@ -144,10 +144,10 @@ body {
 
 .current-selection-container {
   padding: 20px;
-  background-color: #f0f0f0; /* Light gray background */
+  background-color: white;
   border-radius: 8px;
   border: 1px solid #ccc;
-  margin-top: 20px; /* Adds space between the content and the next element */
+  margin-top: 20px;
 }
 
 #click-count {
@@ -161,8 +161,35 @@ body {
 
 .unit-details-container {
   padding: 20px;
-  background-color: brown; /* Light gray background */
+  background-color: #007BFF;
   border-radius: 8px;
   border: 1px solid #ccc;
-  margin-top: 2px; /* Adds space between the content and the next element */
+  margin-top: 2px;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;            
+  margin-bottom: 10px;            
+}
+
+.unit-details-container p {
+  margin: 0;
+}
+
+.remove-circle-button {
+  width: 40px;      
+  height: 40px;     
+  border-radius: 50%; 
+  background-color: white;
+  color: #007BFF;
+  font-size: 24px;   
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 10px;
+  padding: 10px 20px; 
+  margin-bottom: 5px; 
 }

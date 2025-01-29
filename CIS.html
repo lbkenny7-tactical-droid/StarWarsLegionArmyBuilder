@@ -47,7 +47,7 @@
     let commanderCount = 0;
     
   
-    fetch('http://localhost:3000/api/data')
+    fetch('http://localhost:3000/api/separatist-units')
       .then(response => response.json())
       .then(data => {
         const buttonContainer = document.getElementById('button-container');
@@ -112,17 +112,30 @@
             const unitDetailsContainer = document.createElement('div');
             unitDetailsContainer.classList.add('unit-details-container');
 
-            const name = document.createElement('h3');
+            const name = document.createElement('p');
             name.textContent = `${addButton.getAttribute('data-name')}`;
             unitDetailsContainer.appendChild(name);
-
-            const description = document.createElement('p');
-            description.textContent = `${addButton.getAttribute('data-description')}`;
-            unitDetailsContainer.appendChild(description);
 
             const points = document.createElement('p');
             points.textContent = `Points: ${addButton.getAttribute('data-points')}`;
             unitDetailsContainer.appendChild(points);
+
+            const buttonContainer = document.createElement('div');
+            buttonContainer.classList.add('unit-buttons');
+
+            const removeButton = document.createElement('button');
+            removeButton.classList.add('button', 'remove-circle-button');
+            removeButton.textContent = '-';
+
+            removeButton.addEventListener('click', () => {
+              unitDetailsContainer.remove();
+              commanderCount--;
+              document.getElementById('commander-count').textContent = commanderCount;
+            });
+
+            buttonContainer.appendChild(removeButton);
+            
+            unitDetailsContainer.appendChild(buttonContainer);
 
             const unitDetails = document.getElementById('added-units');
             unitDetails.appendChild(unitDetailsContainer);
@@ -130,6 +143,7 @@
             commanderCount++;
             document.getElementById('commander-count').textContent = commanderCount;
         });
+
 
         });
       })
