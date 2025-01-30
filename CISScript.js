@@ -12,29 +12,10 @@ function commanderButtonFunction(event) {
   imageContainer.appendChild(img);
 }
 
-function onPlusButtonClick(event) {
-  const buttonId = event.target.id;
-  
-  alert(`You clicked the button with ID: ${buttonId}`);
-
-  const selectedImageContainer = document.getElementById("added-units");
-
-  if (buttonId === "add-dooku") {
-    selectedImageContainer.innerHTML = '<img src="Pictures/CountDookuUnitCard.jpg" alt="Count Dooku">';
-  } else if (buttonId === "button-plus-2") {
-    selectedImageContainer.innerHTML = '<img src="Pictures/GeneralGrievousUnitCard.jpg" alt="General Grievous">';
-  }
-}
-
 window.onload = function() {
   const commanderButtons = document.querySelectorAll('.commander-button');
   commanderButtons.forEach(button => {
     button.addEventListener('click', commanderButtonFunction);
-  });
-
-  const plusButtons = document.querySelectorAll('.circle-button');
-  plusButtons.forEach(button => {
-    button.addEventListener('click', onPlusButtonClick);
   });
 };
 
@@ -44,7 +25,7 @@ function splitUpgrades(upgradeList){
   return unitUpgradeSplitList;
 }
 
-function separatistUnits(buttonContainer,unit){
+function createUnitButton(unit){
   const unitButtonContainer = document.createElement('div');
   unitButtonContainer.classList.add('button-container');
 
@@ -78,13 +59,17 @@ function separatistUnits(buttonContainer,unit){
   unitButtonContainer.appendChild(commanderButton);
   unitButtonContainer.appendChild(addButton);
 
+  return {unitButtonContainer, commanderButton, addButton};
+}
+
+function separatistUnits(buttonContainer,unit){
+  const {unitButtonContainer, commanderButton, addButton} = createUnitButton(unit);
+
   buttonContainer.appendChild(unitButtonContainer);
 
   commanderButton.addEventListener('click', () => {
     const unitCardImage = commanderButton.getAttribute('data-image');
     const unitName = commanderButton.getAttribute('data-name');
-    const unitDescription = commanderButton.getAttribute('data-description');
-    const unitPoints = commanderButton.getAttribute('data-points');
 
     const unitCardDisplay = document.getElementById('unit-card-display');
 
@@ -136,6 +121,8 @@ function separatistUnits(buttonContainer,unit){
     const unitUpgradeSplitList = splitUpgrades(unit.upgrade_slots);
     console.log(unitUpgradeSplitList);
 
+    const upgradeDetailsContainer = document.createElement('div');
+
     for (let i = 0; i < unitUpgradeSplitList.length; i++) {
       const upgradeButton = document.createElement('button');
       upgradeButton.classList.add('button', 'upgrade-circle-button');
@@ -145,15 +132,30 @@ function separatistUnits(buttonContainer,unit){
       upgradeImage.src = `Pictures/upgrade_${unitUpgradeSplitList[i]}_icon.jpg`;
 
       upgradeButton.appendChild(upgradeImage);
+      upgradeButtonContainer.appendChild(upgradeButton);
+
+      upgradeDetailsContainer.classList.add('upgrade-details-container');
 
       upgradeButton.addEventListener('click', () => {
-          alert(`Upgrade ${unitUpgradeSplitList[i]} selected!`);
+        
+        upgradeDetailsContainer.innerHTML = '';
+
+        for (let i = 0; i < unitUpgradeSplitList.length; i++) {
+          const upgradeDetailsButton = document.createElement('button');
+          upgradeDetailsButton.classList.add('button', 'upgrade-details-button');
+          upgradeDetailsButton.textContent = `${unitUpgradeSplitList[i]}`;
+    
+          upgradeDetailsButton.addEventListener('click', () => {
+            alert("A thing was clicked");
       });
 
-      upgradeButtonContainer.appendChild(upgradeButton);
+          upgradeDetailsContainer.appendChild(upgradeDetailsButton);
+        }
+      });
     }
 
     unitDetails.appendChild(upgradeButtonContainer);
+    unitDetails.appendChild(upgradeDetailsContainer);
 
     commanderCount++;
     document.getElementById('commander-count').textContent = commanderCount;
