@@ -20,7 +20,7 @@
   <main>
     <div class="columns">
       <div class="column">
-        <p class="subheaders">Commanders</p>
+        <p class="subheaders">Separatist Units</p>
         <div id="button-container"></div>
       </div>
       <div class="column">
@@ -55,82 +55,7 @@
         buttonContainer.innerHTML = '';
 
         data.forEach(unit => {
-          const unitButtonContainer = document.createElement('div');
-          unitButtonContainer.classList.add('button-container');
-
-          const commanderButton = document.createElement('button');
-          commanderButton.classList.add('button', 'commander-button');
-          commanderButton.setAttribute('data-image', `${unit.unitcard_image}`);
-          commanderButton.setAttribute('data-name', unit.name);
-          commanderButton.setAttribute('data-description', unit.description);
-          commanderButton.setAttribute('data-points', unit.points);
-
-          const buttonText = document.createElement('span');
-          buttonText.classList.add('button-text');
-          buttonText.textContent = unit.name;
-          commanderButton.appendChild(buttonText);
-
-          const buttonImage = document.createElement('img');
-          buttonImage.src = `${unit.toy_image}`;
-          buttonImage.alt = unit.name;
-          buttonImage.classList.add('button-image');
-          commanderButton.appendChild(buttonImage);
-
-          const addButton = document.createElement('button');
-          addButton.classList.add('button', 'circle-button');
-          addButton.id = `add-${unit.id}`;
-          addButton.textContent = '+';
-
-          addButton.setAttribute('data-name', unit.name);
-          addButton.setAttribute('data-description', unit.description);
-          addButton.setAttribute('data-points', unit.points);
-
-          unitButtonContainer.appendChild(commanderButton);
-          unitButtonContainer.appendChild(addButton);
-
-          buttonContainer.appendChild(unitButtonContainer);
-
-          commanderButton.addEventListener('click', () => {
-            const unitCardImage = commanderButton.getAttribute('data-image');
-            const unitName = commanderButton.getAttribute('data-name');
-            const unitDescription = commanderButton.getAttribute('data-description');
-            const unitPoints = commanderButton.getAttribute('data-points');
-
-            const unitCardDisplay = document.getElementById('unit-card-display');
-
-            const unitImage = document.createElement('img');
-            unitImage.src = unitCardImage;
-            unitImage.alt = unitName;
-            unitImage.classList.add('unit-card-image');
-
-            unitCardDisplay.innerHTML = '';
-            unitCardDisplay.appendChild(unitImage);
-          });
-
-
-          addButton.addEventListener('click', () => {
-            const unitDetailsContainer = document.createElement('div');
-            unitDetailsContainer.classList.add('unit-details-container');
-
-            const name = document.createElement('h3');
-            name.textContent = `${addButton.getAttribute('data-name')}`;
-            unitDetailsContainer.appendChild(name);
-
-            const description = document.createElement('p');
-            description.textContent = `${addButton.getAttribute('data-description')}`;
-            unitDetailsContainer.appendChild(description);
-
-            const points = document.createElement('p');
-            points.textContent = `Points: ${addButton.getAttribute('data-points')}`;
-            unitDetailsContainer.appendChild(points);
-
-            const unitDetails = document.getElementById('added-units');
-            unitDetails.appendChild(unitDetailsContainer);
-
-            commanderCount++;
-            document.getElementById('commander-count').textContent = commanderCount;
-        });
-
+          separatistUnits(buttonContainer,unit);
         });
       })
       .catch(error => {
