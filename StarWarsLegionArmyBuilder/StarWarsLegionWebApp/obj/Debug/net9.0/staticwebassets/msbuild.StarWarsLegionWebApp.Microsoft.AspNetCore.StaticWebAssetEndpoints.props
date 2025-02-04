@@ -1,0 +1,328 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/index.de8ttwnv69.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"de8ttwnv69"},{"Name":"integrity","Value":"sha256-xbxOT9DppMwS0xoo/jfXEd7FSSmsRPyTE9herYJbr7U="},{"Name":"label","Value":"_content/StarWarsLegionWebApp/index.html"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1818"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022xbxOT9DppMwS0xoo/jfXEd7FSSmsRPyTE9herYJbr7U=\u0022"},{"Name":"Last-Modified","Value":"Tue, 04 Feb 2025 02:38:34 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/index.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-xbxOT9DppMwS0xoo/jfXEd7FSSmsRPyTE9herYJbr7U="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1818"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022xbxOT9DppMwS0xoo/jfXEd7FSSmsRPyTE9herYJbr7U=\u0022"},{"Name":"Last-Modified","Value":"Tue, 04 Feb 2025 02:38:34 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/Pictures/BlackSunVigo.98r93tnlip.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Pictures\BlackSunVigo.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"98r93tnlip"},{"Name":"integrity","Value":"sha256-5\u002Bb7330tXEbtvMtuksm066\u002BYg\u002B0mHYLuni37cqyiNug="},{"Name":"label","Value":"_content/StarWarsLegionWebApp/Pictures/BlackSunVigo.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"7291"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00225\u002Bb7330tXEbtvMtuksm066\u002BYg\u002B0mHYLuni37cqyiNug=\u0022"},{"Name":"Last-Modified","Value":"Wed, 22 Jan 2025 06:19:16 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/Pictures/BlackSunVigo.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Pictures\BlackSunVigo.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-5\u002Bb7330tXEbtvMtuksm066\u002BYg\u002B0mHYLuni37cqyiNug="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"7291"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00225\u002Bb7330tXEbtvMtuksm066\u002BYg\u002B0mHYLuni37cqyiNug=\u0022"},{"Name":"Last-Modified","Value":"Wed, 22 Jan 2025 06:19:16 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/Pictures/BlackSunVigoUnitCard.3hwdnzf1y2.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Pictures\BlackSunVigoUnitCard.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"3hwdnzf1y2"},{"Name":"integrity","Value":"sha256-WQfKQtcnx9vYfHtheFHGBfsblyveAz/2n6TC\u002B\u002BcUyow="},{"Name":"label","Value":"_content/StarWarsLegionWebApp/Pictures/BlackSunVigoUnitCard.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"53307"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022WQfKQtcnx9vYfHtheFHGBfsblyveAz/2n6TC\u002B\u002BcUyow=\u0022"},{"Name":"Last-Modified","Value":"Wed, 22 Jan 2025 06:55:17 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/Pictures/BlackSunVigoUnitCard.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Pictures\BlackSunVigoUnitCard.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-WQfKQtcnx9vYfHtheFHGBfsblyveAz/2n6TC\u002B\u002BcUyow="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"53307"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022WQfKQtcnx9vYfHtheFHGBfsblyveAz/2n6TC\u002B\u002BcUyow=\u0022"},{"Name":"Last-Modified","Value":"Wed, 22 Jan 2025 06:55:17 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/Pictures/CountDookuToy.c9h8bg5iqa.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Pictures\CountDookuToy.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"c9h8bg5iqa"},{"Name":"integrity","Value":"sha256-YARocMUmNZ5voHJKYp4OqA\u002B9/pgrXmhefSiEurYHV1E="},{"Name":"label","Value":"_content/StarWarsLegionWebApp/Pictures/CountDookuToy.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4589"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022YARocMUmNZ5voHJKYp4OqA\u002B9/pgrXmhefSiEurYHV1E=\u0022"},{"Name":"Last-Modified","Value":"Wed, 22 Jan 2025 06:12:41 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/Pictures/CountDookuToy.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Pictures\CountDookuToy.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-YARocMUmNZ5voHJKYp4OqA\u002B9/pgrXmhefSiEurYHV1E="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"4589"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022YARocMUmNZ5voHJKYp4OqA\u002B9/pgrXmhefSiEurYHV1E=\u0022"},{"Name":"Last-Modified","Value":"Wed, 22 Jan 2025 06:12:41 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/Pictures/CountDookuUnitCard.7zbzv6bz8v.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Pictures\CountDookuUnitCard.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"7zbzv6bz8v"},{"Name":"integrity","Value":"sha256-nRFwCzOi5tfprIpXiGGIngK3KyGv/BASyHAgg31MVN4="},{"Name":"label","Value":"_content/StarWarsLegionWebApp/Pictures/CountDookuUnitCard.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"56812"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022nRFwCzOi5tfprIpXiGGIngK3KyGv/BASyHAgg31MVN4=\u0022"},{"Name":"Last-Modified","Value":"Wed, 22 Jan 2025 06:46:00 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/Pictures/CountDookuUnitCard.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Pictures\CountDookuUnitCard.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-nRFwCzOi5tfprIpXiGGIngK3KyGv/BASyHAgg31MVN4="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"56812"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022nRFwCzOi5tfprIpXiGGIngK3KyGv/BASyHAgg31MVN4=\u0022"},{"Name":"Last-Modified","Value":"Wed, 22 Jan 2025 06:46:00 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/Pictures/GeneralGrievousToy.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Pictures\GeneralGrievousToy.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-1SwwJ5QJJgT4KQ4IpKFc0W/oLk16NSVt93ewveJdeAw="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"6159"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00221SwwJ5QJJgT4KQ4IpKFc0W/oLk16NSVt93ewveJdeAw=\u0022"},{"Name":"Last-Modified","Value":"Wed, 22 Jan 2025 06:13:39 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/Pictures/GeneralGrievousToy.ndgha3fxrc.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Pictures\GeneralGrievousToy.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ndgha3fxrc"},{"Name":"integrity","Value":"sha256-1SwwJ5QJJgT4KQ4IpKFc0W/oLk16NSVt93ewveJdeAw="},{"Name":"label","Value":"_content/StarWarsLegionWebApp/Pictures/GeneralGrievousToy.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"6159"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00221SwwJ5QJJgT4KQ4IpKFc0W/oLk16NSVt93ewveJdeAw=\u0022"},{"Name":"Last-Modified","Value":"Wed, 22 Jan 2025 06:13:39 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/Pictures/GeneralGrievousUnitCard.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Pictures\GeneralGrievousUnitCard.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-7DmyYulLqZXHM00foNtljviuyCIDYoLMAiuxve1inNo="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"54699"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00227DmyYulLqZXHM00foNtljviuyCIDYoLMAiuxve1inNo=\u0022"},{"Name":"Last-Modified","Value":"Wed, 22 Jan 2025 06:49:05 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/Pictures/GeneralGrievousUnitCard.wt6mmlroql.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Pictures\GeneralGrievousUnitCard.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"wt6mmlroql"},{"Name":"integrity","Value":"sha256-7DmyYulLqZXHM00foNtljviuyCIDYoLMAiuxve1inNo="},{"Name":"label","Value":"_content/StarWarsLegionWebApp/Pictures/GeneralGrievousUnitCard.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"54699"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00227DmyYulLqZXHM00foNtljviuyCIDYoLMAiuxve1inNo=\u0022"},{"Name":"Last-Modified","Value":"Wed, 22 Jan 2025 06:49:05 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/Pictures/Gihub avatar.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Pictures\Gihub avatar.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-RZF/cKLfOa/rhZ0F4EdLuZYzIXX07MWyhtp48GVYcKI="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"14036"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022RZF/cKLfOa/rhZ0F4EdLuZYzIXX07MWyhtp48GVYcKI=\u0022"},{"Name":"Last-Modified","Value":"Mon, 27 Jan 2025 01:00:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/Pictures/Gihub avatar.vj724mwdbq.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Pictures\Gihub avatar.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vj724mwdbq"},{"Name":"integrity","Value":"sha256-RZF/cKLfOa/rhZ0F4EdLuZYzIXX07MWyhtp48GVYcKI="},{"Name":"label","Value":"_content/StarWarsLegionWebApp/Pictures/Gihub avatar.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"14036"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022RZF/cKLfOa/rhZ0F4EdLuZYzIXX07MWyhtp48GVYcKI=\u0022"},{"Name":"Last-Modified","Value":"Mon, 27 Jan 2025 01:00:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/Pictures/KalaniToy.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Pictures\KalaniToy.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-qgf8OyYCWqcRrC/tzB7ejODop3tcBd6Fkr\u002Bx\u002BTjbwOY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"6671"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022qgf8OyYCWqcRrC/tzB7ejODop3tcBd6Fkr\u002Bx\u002BTjbwOY=\u0022"},{"Name":"Last-Modified","Value":"Wed, 22 Jan 2025 06:16:10 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/Pictures/KalaniToy.m9d284sorv.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Pictures\KalaniToy.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"m9d284sorv"},{"Name":"integrity","Value":"sha256-qgf8OyYCWqcRrC/tzB7ejODop3tcBd6Fkr\u002Bx\u002BTjbwOY="},{"Name":"label","Value":"_content/StarWarsLegionWebApp/Pictures/KalaniToy.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"6671"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022qgf8OyYCWqcRrC/tzB7ejODop3tcBd6Fkr\u002Bx\u002BTjbwOY=\u0022"},{"Name":"Last-Modified","Value":"Wed, 22 Jan 2025 06:16:10 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/Pictures/KalaniUnitCard.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Pictures\KalaniUnitCard.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-gDgyESyq7Hnr\u002BXGbxHGpXoIK\u002B5StbLcJx1Gk\u002BzGg3jU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"48707"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022gDgyESyq7Hnr\u002BXGbxHGpXoIK\u002B5StbLcJx1Gk\u002BzGg3jU=\u0022"},{"Name":"Last-Modified","Value":"Wed, 22 Jan 2025 06:50:52 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/Pictures/KalaniUnitCard.ounb2qdz78.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Pictures\KalaniUnitCard.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ounb2qdz78"},{"Name":"integrity","Value":"sha256-gDgyESyq7Hnr\u002BXGbxHGpXoIK\u002B5StbLcJx1Gk\u002BzGg3jU="},{"Name":"label","Value":"_content/StarWarsLegionWebApp/Pictures/KalaniUnitCard.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"48707"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022gDgyESyq7Hnr\u002BXGbxHGpXoIK\u002B5StbLcJx1Gk\u002BzGg3jU=\u0022"},{"Name":"Last-Modified","Value":"Wed, 22 Jan 2025 06:50:52 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/Pictures/KrakenToy.ix4lruogwj.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Pictures\KrakenToy.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ix4lruogwj"},{"Name":"integrity","Value":"sha256-ykCEUdzRJyCoSe3mAT/d5Oi09Zw6PN9fRc0eI3A/j3A="},{"Name":"label","Value":"_content/StarWarsLegionWebApp/Pictures/KrakenToy.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"6325"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022ykCEUdzRJyCoSe3mAT/d5Oi09Zw6PN9fRc0eI3A/j3A=\u0022"},{"Name":"Last-Modified","Value":"Wed, 22 Jan 2025 06:16:27 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/Pictures/KrakenToy.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Pictures\KrakenToy.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ykCEUdzRJyCoSe3mAT/d5Oi09Zw6PN9fRc0eI3A/j3A="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"6325"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022ykCEUdzRJyCoSe3mAT/d5Oi09Zw6PN9fRc0eI3A/j3A=\u0022"},{"Name":"Last-Modified","Value":"Wed, 22 Jan 2025 06:16:27 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/Pictures/KrakenUnitCard.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Pictures\KrakenUnitCard.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-IBUxT\u002B7tN5D6w5AyoT6KSAVOsdfDldeyW2ukmefLEBg="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"47127"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022IBUxT\u002B7tN5D6w5AyoT6KSAVOsdfDldeyW2ukmefLEBg=\u0022"},{"Name":"Last-Modified","Value":"Wed, 22 Jan 2025 06:52:03 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/Pictures/KrakenUnitCard.oi4cdjjr00.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Pictures\KrakenUnitCard.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"oi4cdjjr00"},{"Name":"integrity","Value":"sha256-IBUxT\u002B7tN5D6w5AyoT6KSAVOsdfDldeyW2ukmefLEBg="},{"Name":"label","Value":"_content/StarWarsLegionWebApp/Pictures/KrakenUnitCard.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"47127"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022IBUxT\u002B7tN5D6w5AyoT6KSAVOsdfDldeyW2ukmefLEBg=\u0022"},{"Name":"Last-Modified","Value":"Wed, 22 Jan 2025 06:52:03 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/Pictures/PoggleToy.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Pictures\PoggleToy.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-XR00QHxopZP5Q7M3W\u002BQ1pV6QCrEaYvc/5E4oerBJFvg="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"3867"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022XR00QHxopZP5Q7M3W\u002BQ1pV6QCrEaYvc/5E4oerBJFvg=\u0022"},{"Name":"Last-Modified","Value":"Wed, 22 Jan 2025 06:14:28 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/Pictures/PoggleToy.ryotnywq3u.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Pictures\PoggleToy.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ryotnywq3u"},{"Name":"integrity","Value":"sha256-XR00QHxopZP5Q7M3W\u002BQ1pV6QCrEaYvc/5E4oerBJFvg="},{"Name":"label","Value":"_content/StarWarsLegionWebApp/Pictures/PoggleToy.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3867"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022XR00QHxopZP5Q7M3W\u002BQ1pV6QCrEaYvc/5E4oerBJFvg=\u0022"},{"Name":"Last-Modified","Value":"Wed, 22 Jan 2025 06:14:28 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/Pictures/PoggleUnitCard.5iaepbl7bn.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Pictures\PoggleUnitCard.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"5iaepbl7bn"},{"Name":"integrity","Value":"sha256-U/5IrK\u002BxyD7cCeNXtrAbmiL4rATp6P/o20GteQ2PyVo="},{"Name":"label","Value":"_content/StarWarsLegionWebApp/Pictures/PoggleUnitCard.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"53108"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022U/5IrK\u002BxyD7cCeNXtrAbmiL4rATp6P/o20GteQ2PyVo=\u0022"},{"Name":"Last-Modified","Value":"Wed, 22 Jan 2025 06:49:53 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/Pictures/PoggleUnitCard.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Pictures\PoggleUnitCard.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-U/5IrK\u002BxyD7cCeNXtrAbmiL4rATp6P/o20GteQ2PyVo="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"53108"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022U/5IrK\u002BxyD7cCeNXtrAbmiL4rATp6P/o20GteQ2PyVo=\u0022"},{"Name":"Last-Modified","Value":"Wed, 22 Jan 2025 06:49:53 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/Pictures/PykeSyndicateCapoToy.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Pictures\PykeSyndicateCapoToy.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-kGW9HFECN9K20LL5GS4hEd9EhJGMSnAZbFaeoA6uVJo="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"5829"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022kGW9HFECN9K20LL5GS4hEd9EhJGMSnAZbFaeoA6uVJo=\u0022"},{"Name":"Last-Modified","Value":"Wed, 22 Jan 2025 06:19:58 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/Pictures/PykeSyndicateCapoToy.wce7uuorzs.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Pictures\PykeSyndicateCapoToy.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"wce7uuorzs"},{"Name":"integrity","Value":"sha256-kGW9HFECN9K20LL5GS4hEd9EhJGMSnAZbFaeoA6uVJo="},{"Name":"label","Value":"_content/StarWarsLegionWebApp/Pictures/PykeSyndicateCapoToy.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5829"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022kGW9HFECN9K20LL5GS4hEd9EhJGMSnAZbFaeoA6uVJo=\u0022"},{"Name":"Last-Modified","Value":"Wed, 22 Jan 2025 06:19:58 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/Pictures/PykeSyndicateCapoUnitCard.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Pictures\PykeSyndicateCapoUnitCard.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-vm3/HUd1EBuzzdlYbZ7A5kIwuPwbLXIbMErCxx1H8yY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"54993"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022vm3/HUd1EBuzzdlYbZ7A5kIwuPwbLXIbMErCxx1H8yY=\u0022"},{"Name":"Last-Modified","Value":"Wed, 22 Jan 2025 06:56:13 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/Pictures/PykeSyndicateCapoUnitCard.mzojhrpgvl.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Pictures\PykeSyndicateCapoUnitCard.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"mzojhrpgvl"},{"Name":"integrity","Value":"sha256-vm3/HUd1EBuzzdlYbZ7A5kIwuPwbLXIbMErCxx1H8yY="},{"Name":"label","Value":"_content/StarWarsLegionWebApp/Pictures/PykeSyndicateCapoUnitCard.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"54993"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022vm3/HUd1EBuzzdlYbZ7A5kIwuPwbLXIbMErCxx1H8yY=\u0022"},{"Name":"Last-Modified","Value":"Wed, 22 Jan 2025 06:56:13 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/Pictures/STDToy.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Pictures\STDToy.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-0zgcdC791e5kJ2UhHN4Y3WX9Z61hbomW9CyIIOOLLKo="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"6322"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00220zgcdC791e5kJ2UhHN4Y3WX9Z61hbomW9CyIIOOLLKo=\u0022"},{"Name":"Last-Modified","Value":"Wed, 22 Jan 2025 06:15:31 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/Pictures/STDToy.vl8d81uht2.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Pictures\STDToy.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vl8d81uht2"},{"Name":"integrity","Value":"sha256-0zgcdC791e5kJ2UhHN4Y3WX9Z61hbomW9CyIIOOLLKo="},{"Name":"label","Value":"_content/StarWarsLegionWebApp/Pictures/STDToy.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"6322"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00220zgcdC791e5kJ2UhHN4Y3WX9Z61hbomW9CyIIOOLLKo=\u0022"},{"Name":"Last-Modified","Value":"Wed, 22 Jan 2025 06:15:31 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/Pictures/STDUnitCard.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Pictures\STDUnitCard.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-az1KyuT9slIhi6x96ammSwklOCVRi\u002B40KIP6jMKM7Ek="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"49367"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022az1KyuT9slIhi6x96ammSwklOCVRi\u002B40KIP6jMKM7Ek=\u0022"},{"Name":"Last-Modified","Value":"Wed, 22 Jan 2025 06:52:41 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/Pictures/STDUnitCard.ro7ebpr6oq.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Pictures\STDUnitCard.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ro7ebpr6oq"},{"Name":"integrity","Value":"sha256-az1KyuT9slIhi6x96ammSwklOCVRi\u002B40KIP6jMKM7Ek="},{"Name":"label","Value":"_content/StarWarsLegionWebApp/Pictures/STDUnitCard.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"49367"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022az1KyuT9slIhi6x96ammSwklOCVRi\u002B40KIP6jMKM7Ek=\u0022"},{"Name":"Last-Modified","Value":"Wed, 22 Jan 2025 06:52:41 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/Pictures/TSeriesToy.7zxiuhs7bh.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Pictures\TSeriesToy.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"7zxiuhs7bh"},{"Name":"integrity","Value":"sha256-fUGERSk23ur/YrF5l6BypvmUuhiq9nKDYVdJj1ROUrs="},{"Name":"label","Value":"_content/StarWarsLegionWebApp/Pictures/TSeriesToy.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4341"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022fUGERSk23ur/YrF5l6BypvmUuhiq9nKDYVdJj1ROUrs=\u0022"},{"Name":"Last-Modified","Value":"Wed, 22 Jan 2025 06:15:55 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/Pictures/TSeriesToy.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Pictures\TSeriesToy.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-fUGERSk23ur/YrF5l6BypvmUuhiq9nKDYVdJj1ROUrs="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"4341"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022fUGERSk23ur/YrF5l6BypvmUuhiq9nKDYVdJj1ROUrs=\u0022"},{"Name":"Last-Modified","Value":"Wed, 22 Jan 2025 06:15:55 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/Pictures/TSeriesUnitCard.7cnk1ha04a.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Pictures\TSeriesUnitCard.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"7cnk1ha04a"},{"Name":"integrity","Value":"sha256-2SfQ7WTnFLv/zqRJ4sr9PCp2RvKRRkd/E6vZmRXgLaI="},{"Name":"label","Value":"_content/StarWarsLegionWebApp/Pictures/TSeriesUnitCard.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"47118"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00222SfQ7WTnFLv/zqRJ4sr9PCp2RvKRRkd/E6vZmRXgLaI=\u0022"},{"Name":"Last-Modified","Value":"Wed, 22 Jan 2025 06:54:05 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/Pictures/TSeriesUnitCard.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Pictures\TSeriesUnitCard.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-2SfQ7WTnFLv/zqRJ4sr9PCp2RvKRRkd/E6vZmRXgLaI="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"47118"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00222SfQ7WTnFLv/zqRJ4sr9PCp2RvKRRkd/E6vZmRXgLaI=\u0022"},{"Name":"Last-Modified","Value":"Wed, 22 Jan 2025 06:54:05 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/Pictures/upgrade_command_icon.0or9ez9r85.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Pictures\upgrade_command_icon.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"0or9ez9r85"},{"Name":"integrity","Value":"sha256-UH52irt2nD9bld6xoOH5LH9aAYmYG9tnXmREQrmtCyQ="},{"Name":"label","Value":"_content/StarWarsLegionWebApp/Pictures/upgrade_command_icon.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1840"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022UH52irt2nD9bld6xoOH5LH9aAYmYG9tnXmREQrmtCyQ=\u0022"},{"Name":"Last-Modified","Value":"Thu, 30 Jan 2025 04:07:14 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/Pictures/upgrade_command_icon.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Pictures\upgrade_command_icon.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-UH52irt2nD9bld6xoOH5LH9aAYmYG9tnXmREQrmtCyQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"1840"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022UH52irt2nD9bld6xoOH5LH9aAYmYG9tnXmREQrmtCyQ=\u0022"},{"Name":"Last-Modified","Value":"Thu, 30 Jan 2025 04:07:14 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/Pictures/upgrade_comms_icon.giyblhioh0.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Pictures\upgrade_comms_icon.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"giyblhioh0"},{"Name":"integrity","Value":"sha256-eLz9yflp9ZMXFT6I9POH9GzBb9WNBDEmwpHZcbVQx7g="},{"Name":"label","Value":"_content/StarWarsLegionWebApp/Pictures/upgrade_comms_icon.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1808"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022eLz9yflp9ZMXFT6I9POH9GzBb9WNBDEmwpHZcbVQx7g=\u0022"},{"Name":"Last-Modified","Value":"Thu, 30 Jan 2025 04:07:14 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/Pictures/upgrade_comms_icon.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Pictures\upgrade_comms_icon.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-eLz9yflp9ZMXFT6I9POH9GzBb9WNBDEmwpHZcbVQx7g="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"1808"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022eLz9yflp9ZMXFT6I9POH9GzBb9WNBDEmwpHZcbVQx7g=\u0022"},{"Name":"Last-Modified","Value":"Thu, 30 Jan 2025 04:07:14 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/Pictures/upgrade_force_icon.28wer9bpz1.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Pictures\upgrade_force_icon.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"28wer9bpz1"},{"Name":"integrity","Value":"sha256-okn/6y2gEastfqX1\u002BbjsGalRyBFt/24r/wkLgRGf92A="},{"Name":"label","Value":"_content/StarWarsLegionWebApp/Pictures/upgrade_force_icon.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1895"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022okn/6y2gEastfqX1\u002BbjsGalRyBFt/24r/wkLgRGf92A=\u0022"},{"Name":"Last-Modified","Value":"Thu, 30 Jan 2025 04:07:14 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/Pictures/upgrade_force_icon.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Pictures\upgrade_force_icon.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-okn/6y2gEastfqX1\u002BbjsGalRyBFt/24r/wkLgRGf92A="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"1895"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022okn/6y2gEastfqX1\u002BbjsGalRyBFt/24r/wkLgRGf92A=\u0022"},{"Name":"Last-Modified","Value":"Thu, 30 Jan 2025 04:07:14 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/Pictures/upgrade_gear_icon.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Pictures\upgrade_gear_icon.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-PUE6GGWCZvxY38IvwLeIYVmmqPwiaBnUzmsAxdp5cTs="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"1927"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022PUE6GGWCZvxY38IvwLeIYVmmqPwiaBnUzmsAxdp5cTs=\u0022"},{"Name":"Last-Modified","Value":"Thu, 30 Jan 2025 04:07:14 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/Pictures/upgrade_gear_icon.tgu4ugzamq.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Pictures\upgrade_gear_icon.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"tgu4ugzamq"},{"Name":"integrity","Value":"sha256-PUE6GGWCZvxY38IvwLeIYVmmqPwiaBnUzmsAxdp5cTs="},{"Name":"label","Value":"_content/StarWarsLegionWebApp/Pictures/upgrade_gear_icon.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1927"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022PUE6GGWCZvxY38IvwLeIYVmmqPwiaBnUzmsAxdp5cTs=\u0022"},{"Name":"Last-Modified","Value":"Thu, 30 Jan 2025 04:07:14 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/Pictures/upgrade_training_icon.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Pictures\upgrade_training_icon.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-C\u002B\u002BaNMjBWnwHF\u002BJs1WFNvyOfxajtKNzt/k1tlFQsxC4="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"1883"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022C\u002B\u002BaNMjBWnwHF\u002BJs1WFNvyOfxajtKNzt/k1tlFQsxC4=\u0022"},{"Name":"Last-Modified","Value":"Thu, 30 Jan 2025 04:07:14 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/Pictures/upgrade_training_icon.n1dwh5ctpk.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Pictures\upgrade_training_icon.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"n1dwh5ctpk"},{"Name":"integrity","Value":"sha256-C\u002B\u002BaNMjBWnwHF\u002BJs1WFNvyOfxajtKNzt/k1tlFQsxC4="},{"Name":"label","Value":"_content/StarWarsLegionWebApp/Pictures/upgrade_training_icon.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1883"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022C\u002B\u002BaNMjBWnwHF\u002BJs1WFNvyOfxajtKNzt/k1tlFQsxC4=\u0022"},{"Name":"Last-Modified","Value":"Thu, 30 Jan 2025 04:07:14 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/script.fycr27sxaa.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\script.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"fycr27sxaa"},{"Name":"integrity","Value":"sha256-VzjvgzsLM6pXixZAugJi7gnx/l3LeSicFANkk9JbpHc="},{"Name":"label","Value":"_content/StarWarsLegionWebApp/script.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5952"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022VzjvgzsLM6pXixZAugJi7gnx/l3LeSicFANkk9JbpHc=\u0022"},{"Name":"Last-Modified","Value":"Tue, 04 Feb 2025 02:26:05 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/script.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\script.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-VzjvgzsLM6pXixZAugJi7gnx/l3LeSicFANkk9JbpHc="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5952"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022VzjvgzsLM6pXixZAugJi7gnx/l3LeSicFANkk9JbpHc=\u0022"},{"Name":"Last-Modified","Value":"Tue, 04 Feb 2025 02:26:05 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/style.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\style.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-eqFOqQPiWaYdjNQ5P9y/uPONSObFXAaZEjw4wl3Q5wY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3785"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022eqFOqQPiWaYdjNQ5P9y/uPONSObFXAaZEjw4wl3Q5wY=\u0022"},{"Name":"Last-Modified","Value":"Thu, 30 Jan 2025 05:50:36 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/StarWarsLegionWebApp/style.qsrn9rc89u.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\style.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"qsrn9rc89u"},{"Name":"integrity","Value":"sha256-eqFOqQPiWaYdjNQ5P9y/uPONSObFXAaZEjw4wl3Q5wY="},{"Name":"label","Value":"_content/StarWarsLegionWebApp/style.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3785"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022eqFOqQPiWaYdjNQ5P9y/uPONSObFXAaZEjw4wl3Q5wY=\u0022"},{"Name":"Last-Modified","Value":"Thu, 30 Jan 2025 05:50:36 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>
