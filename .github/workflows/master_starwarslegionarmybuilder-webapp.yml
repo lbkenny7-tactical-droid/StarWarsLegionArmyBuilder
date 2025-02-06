@@ -26,6 +26,9 @@ jobs:
       - name: dotnet publish
         run: dotnet publish StarWarsLegionArmyBuilder/StarWarsLegionWebApp/StarWarsLegionWebApp.csproj -c Release -o ./myapp
 
+      - name: dotnet workload list
+        run: dotnet workload list
+
       - name: List contents of publish directory (debugging)
         run: |
           echo "Listing contents of publish folder:"
