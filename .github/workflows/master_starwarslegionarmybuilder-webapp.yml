@@ -56,6 +56,12 @@ jobs:
         with:
           name: .net-app
 
+      - name: List contents of the _temp directory (debugging)
+        run: |
+          echo "Listing contents of _temp directory:"
+          dir D:\a\_temp
+
+
       - name: Login to Azure
         uses: azure/login@v2
         with:
@@ -69,4 +75,4 @@ jobs:
         with:
           app-name: 'StarWarsLegionArmyBuilder-WebApp'
           slot-name: 'Production'
-          package: D:\a\StarWarsLegionArmyBuilder\StarWarsLegionArmyBuilder\myapp
+          package: D:\a\_temp\.net-app
