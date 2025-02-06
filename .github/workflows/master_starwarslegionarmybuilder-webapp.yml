@@ -10,7 +10,7 @@ jobs:
   build:
     runs-on: windows-latest
     permissions:
-      contents: read #This is required for actions/checkout
+      contents: read # This is required for actions/checkout
 
     steps:
       - uses: actions/checkout@v4
@@ -47,8 +47,8 @@ jobs:
       name: 'Production'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
     permissions:
-      id-token: write #This is required for requesting the JWT
-      contents: read #This is required for actions/checkout
+      id-token: write # This is required for requesting the JWT
+      contents: read # This is required for actions/checkout
 
     steps:
       - name: Download artifact from build job
@@ -56,21 +56,30 @@ jobs:
         with:
           name: .net-app
 
-      - name: Find the downloaded artifact .zip file
-        run: |
-          echo "Searching for .zip files in the _temp directory:"
-          Get-ChildItem -Path D:\a\_temp -Recurse -Filter *.zip
-
-      - name: Extract artifact
-        run: |
-          echo "Extracting the artifact"
-          Expand-Archive -Path D:\a\_temp\fa3fde4f1f5429467501ccd7f3e0425a0c429d3e8dedb5fba065de41de410abf.zip -DestinationPath D:\a\_temp\.net-app
-
-      - name: List contents of the _temp directory (debugging)
+      # List files after downloading the artifact to verify its location
+      - name: List contents of _temp directory (debugging)
         run: |
           echo "Listing contents of _temp directory:"
           dir D:\a\_temp
 
+      # Find and extract the .zip artifact dynamically (if it exists)
+      - name: Find the downloaded .zip file and extract it
+        run: |
+          echo "Searching for .zip files in the _temp directory:"
+          $zipFile = Get-ChildItem -Path D:\a\_temp -Recurse -Filter *.zip | Select-Object -First 1
+          if ($zipFile) {
+            echo "Found .zip file: $($zipFile.FullName)"
+            Expand-Archive -Path $zipFile.FullName -DestinationPath D:\a\_temp\.net-app
+          } else {
+            echo "No .zip file found in _temp directory!"
+            exit 1
+          }
+
+      # List contents of the _temp directory after extraction (for verification)
+      - name: List contents of _temp directory after extraction
+        run: |
+          echo "Listing contents of _temp directory after extraction:"
+          dir D:\a\_temp
 
       - name: Login to Azure
         uses: azure/login@v2
