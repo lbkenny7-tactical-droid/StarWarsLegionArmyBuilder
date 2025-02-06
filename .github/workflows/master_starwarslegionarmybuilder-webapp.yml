@@ -26,6 +26,11 @@ jobs:
       - name: dotnet publish
         run: dotnet publish StarWarsLegionArmyBuilder/StarWarsLegionWebApp/StarWarsLegionWebApp.csproj -c Release -o "${{env.DOTNET_ROOT}}/myapp"
 
+      - name: List contents of publish directory (debugging)
+        run: |
+          echo "Listing contents of publish folder:"
+          dir "${{env.DOTNET_ROOT}}/myapp"
+
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
