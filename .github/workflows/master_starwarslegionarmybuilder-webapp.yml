@@ -63,6 +63,11 @@ jobs:
           echo "Listing contents of the downloaded artifact:"
           dir D:\a\_temp || echo "Directory not found"
 
+      - name: Check if the myapp folder exists (debugging)
+        run: |
+          echo "Listing contents of myapp folder (after download):"
+          dir D:\a\_temp\myapp || echo "myapp directory not found"
+
       - name: Login to Azure
         uses: azure/login@v2
         with:
