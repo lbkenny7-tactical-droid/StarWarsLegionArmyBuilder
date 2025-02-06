@@ -56,21 +56,6 @@ jobs:
         with:
           name: .net-app
 
-      - name: List all files in the current directory (debugging)
-        run: |
-          echo "Listing all files in the current directory:"
-          dir
-
-      - name: List contents of the downloaded artifact (debugging)
-        run: |
-          echo "Listing contents of the downloaded artifact:"
-          dir D:\a\_temp || echo "Directory not found"
-
-      - name: Check if the myapp folder exists (debugging)
-        run: |
-          echo "Listing contents of myapp folder (after download):"
-          dir D:\a\_temp\myapp || echo "myapp directory not found"
-
       - name: Login to Azure
         uses: azure/login@v2
         with:
