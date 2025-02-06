@@ -56,6 +56,16 @@ jobs:
         with:
           name: .net-app
 
+      - name: Find the downloaded artifact .zip file
+        run: |
+          echo "Searching for .zip files in the _temp directory:"
+          Get-ChildItem -Path D:\a\_temp -Recurse -Filter *.zip
+
+      - name: Extract artifact
+        run: |
+          echo "Extracting the artifact"
+          Expand-Archive -Path D:\a\_temp\fa3fde4f1f5429467501ccd7f3e0425a0c429d3e8dedb5fba065de41de410abf.zip -DestinationPath D:\a\_temp\.net-app
+
       - name: List contents of the _temp directory (debugging)
         run: |
           echo "Listing contents of _temp directory:"
