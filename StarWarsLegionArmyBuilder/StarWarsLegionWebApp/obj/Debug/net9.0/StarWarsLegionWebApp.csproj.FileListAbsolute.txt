@@ -1,3 +1,5 @@
+C:\StarWarsLegionWeb\StarWarsLegionArmyBuilder\StarWarsLegionWebApp\bin\Debug\net9.0\appsettings.Development.json
+C:\StarWarsLegionWeb\StarWarsLegionArmyBuilder\StarWarsLegionWebApp\bin\Debug\net9.0\appsettings.json
 C:\StarWarsLegionWeb\StarWarsLegionArmyBuilder\StarWarsLegionWebApp\bin\Debug\net9.0\StarWarsLegionWebApp.staticwebassets.runtime.json
 C:\StarWarsLegionWeb\StarWarsLegionArmyBuilder\StarWarsLegionWebApp\bin\Debug\net9.0\StarWarsLegionWebApp.staticwebassets.endpoints.json
 C:\StarWarsLegionWeb\StarWarsLegionArmyBuilder\StarWarsLegionWebApp\bin\Debug\net9.0\StarWarsLegionWebApp.exe
@@ -134,6 +136,9 @@ C:\StarWarsLegionWeb\StarWarsLegionArmyBuilder\StarWarsLegionWebApp\obj\Debug\ne
 C:\StarWarsLegionWeb\StarWarsLegionArmyBuilder\StarWarsLegionWebApp\obj\Debug\net9.0\StarWarsLegionWebApp.MvcApplicationPartsAssemblyInfo.cache
 C:\StarWarsLegionWeb\StarWarsLegionArmyBuilder\StarWarsLegionWebApp\obj\Debug\net9.0\StarWarsLegionWebApp.sourcelink.json
 C:\StarWarsLegionWeb\StarWarsLegionArmyBuilder\StarWarsLegionWebApp\obj\Debug\net9.0\scopedcss\bundle\StarWarsLegionWebApp.styles.css
+C:\StarWarsLegionWeb\StarWarsLegionArmyBuilder\StarWarsLegionWebApp\obj\Debug\net9.0\compressed\al4cu5kod3-de8ttwnv69.gz
+C:\StarWarsLegionWeb\StarWarsLegionArmyBuilder\StarWarsLegionWebApp\obj\Debug\net9.0\compressed\zjbs1832ys-fycr27sxaa.gz
+C:\StarWarsLegionWeb\StarWarsLegionArmyBuilder\StarWarsLegionWebApp\obj\Debug\net9.0\compressed\rmtenm3od8-qsrn9rc89u.gz
 C:\StarWarsLegionWeb\StarWarsLegionArmyBuilder\StarWarsLegionWebApp\obj\Debug\net9.0\staticwebassets.build.json
 C:\StarWarsLegionWeb\StarWarsLegionArmyBuilder\StarWarsLegionWebApp\obj\Debug\net9.0\staticwebassets.development.json
 C:\StarWarsLegionWeb\StarWarsLegionArmyBuilder\StarWarsLegionWebApp\obj\Debug\net9.0\staticwebassets.build.endpoints.json
@@ -143,12 +148,10 @@ C:\StarWarsLegionWeb\StarWarsLegionArmyBuilder\StarWarsLegionWebApp\obj\Debug\ne
 C:\StarWarsLegionWeb\StarWarsLegionArmyBuilder\StarWarsLegionWebApp\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.StarWarsLegionWebApp.props
 C:\StarWarsLegionWeb\StarWarsLegionArmyBuilder\StarWarsLegionWebApp\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.StarWarsLegionWebApp.props
 C:\StarWarsLegionWeb\StarWarsLegionArmyBuilder\StarWarsLegionWebApp\obj\Debug\net9.0\staticwebassets.pack.json
+C:\StarWarsLegionWeb\StarWarsLegionArmyBuilder\StarWarsLegionWebApp\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\StarWarsLegionWeb\StarWarsLegionArmyBuilder\StarWarsLegionWebApp\obj\Debug\net9.0\StarWars.D2F4C4FE.Up2Date
 C:\StarWarsLegionWeb\StarWarsLegionArmyBuilder\StarWarsLegionWebApp\obj\Debug\net9.0\StarWarsLegionWebApp.dll
 C:\StarWarsLegionWeb\StarWarsLegionArmyBuilder\StarWarsLegionWebApp\obj\Debug\net9.0\refint\StarWarsLegionWebApp.dll
 C:\StarWarsLegionWeb\StarWarsLegionArmyBuilder\StarWarsLegionWebApp\obj\Debug\net9.0\StarWarsLegionWebApp.pdb
 C:\StarWarsLegionWeb\StarWarsLegionArmyBuilder\StarWarsLegionWebApp\obj\Debug\net9.0\StarWarsLegionWebApp.genruntimeconfig.cache
 C:\StarWarsLegionWeb\StarWarsLegionArmyBuilder\StarWarsLegionWebApp\obj\Debug\net9.0\ref\StarWarsLegionWebApp.dll
-C:\StarWarsLegionWeb\StarWarsLegionArmyBuilder\StarWarsLegionWebApp\obj\Debug\net9.0\compressed\al4cu5kod3-de8ttwnv69.gz
-C:\StarWarsLegionWeb\StarWarsLegionArmyBuilder\StarWarsLegionWebApp\obj\Debug\net9.0\compressed\zjbs1832ys-fycr27sxaa.gz
-C:\StarWarsLegionWeb\StarWarsLegionArmyBuilder\StarWarsLegionWebApp\obj\Debug\net9.0\compressed\rmtenm3od8-qsrn9rc89u.gz
