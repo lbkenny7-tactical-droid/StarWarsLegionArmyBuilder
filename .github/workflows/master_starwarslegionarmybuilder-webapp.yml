@@ -39,6 +39,11 @@ jobs:
           echo "Zipping the contents of the 'myapp' directory"
           Compress-Archive -Path ./myapp\* -DestinationPath ./myapp.zip
 
+      - name: List contents of the build folder
+        run: |
+          echo "Listing contents of the build folder:"
+          dir ./myapp
+
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
