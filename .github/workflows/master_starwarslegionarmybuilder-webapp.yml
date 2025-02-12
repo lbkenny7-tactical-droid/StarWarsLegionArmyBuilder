@@ -1,0 +1,114 @@
+name: Build and deploy ASP.Net Core app to Azure Web App - StarWarsLegionArmyBuilder-WebApp
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    permissions:
+      contents: read
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up .NET Core
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '9.x'
+
+      - name: Build with dotnet
+        run: dotnet build StarWarsLegionArmyBuilder/StarWarsLegionWebApp/StarWarsLegionWebApp.sln --configuration Release
+
+      - name: dotnet publish
+        run: dotnet publish StarWarsLegionArmyBuilder/StarWarsLegionWebApp/StarWarsLegionWebApp.csproj -c Release -o ./myapp
+
+      - name: dotnet workload list
+        run: dotnet workload list
+
+      - name: List contents of myapp directory before zipping
+        run: |
+          echo "Listing contents of myapp directory before zipping:"
+          dir ./myapp
+
+      - name: Create .zip artifact for deployment
+        run: |
+          echo "Zipping the contents of the 'myapp' directory"
+          Compress-Archive -Path ./myapp\* -DestinationPath ./myapp.zip
+
+      - name: List contents of the build folder
+        run: |
+          echo "Listing contents of the build folder:"
+          dir ./myapp
+
+      - name: Upload artifact for deployment job
+        uses: actions/upload-artifact@v4
+        with:
+          name: .net-app
+          path: ./myapp.zip
+
+  deploy:
+    runs-on: windows-latest
+    needs: build
+    environment:
+      name: 'Production'
+      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+    permissions:
+      id-token: write # This is required for requesting the JWT
+      contents: read # This is required for actions/checkout
+
+    steps:
+      # Download the artifact from the build job
+      - name: Download artifact from build job
+        uses: actions/download-artifact@v4
+        with:
+          name: .net-app
+          path: D:\a\_temp  # Specify the directory to download the artifact
+      
+      # List files in _temp directory (for debugging)
+      - name: List contents of _temp directory (debugging)
+        run: |
+          echo "Listing contents of _temp directory after download:"
+          dir D:\a\_temp  # This shows the list of files in _temp, including the .zip artifact
+      
+      # Wait for artifact to be ready (optional)
+      - name: Wait for artifact to be ready
+        run: Start-Sleep -Seconds 10  # Wait for 10 seconds to give the artifact time to be available
+      
+      # Find and extract the .zip artifact dynamically (if it exists)
+      - name: Find the downloaded .zip file and extract it
+        run: |
+          echo "Searching for .zip files in the _temp directory:"
+          $zipFile = Get-ChildItem -Path D:\a\_temp -Recurse -Filter *.zip | Select-Object -First 1
+          if ($zipFile) {
+            echo "Found .zip file: $($zipFile.FullName)"
+            Expand-Archive -Path $zipFile.FullName -DestinationPath D:\a\_temp\.net-app
+          } else {
+            echo "No .zip file found in _temp directory!"
+            exit 1
+          }
+      
+      # List files in _temp directory after extraction (for debugging)
+      - name: List contents of _temp directory after extraction
+        run: |
+          echo "Listing contents of _temp directory after extraction:"
+          dir D:\a\_temp
+
+
+      - name: Login to Azure
+        uses: azure/login@v2
+        with:
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_14DC29DCD9834DB3951D61D3EC72265E }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_89D61E7C28AB46B6AB8FC8FB6F1360E5 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_304AEF9CB1284A518734560B2636F31F }}
+
+      - name: Deploy to Azure Web App
+        id: deploy-to-webapp
+        uses: azure/webapps-deploy@v3
+        with:
+          app-name: 'StarWarsLegionArmyBuilder-WebApp'
+          slot-name: 'Production'
+          package: D:\a\_temp\.net-app

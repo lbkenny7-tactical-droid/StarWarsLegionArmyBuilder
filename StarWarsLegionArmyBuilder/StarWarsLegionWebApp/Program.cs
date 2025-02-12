@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 
 public class Program
 {
@@ -13,7 +14,7 @@ public class Program
             {
                 webBuilder.ConfigureServices(services =>
                 {
-                    services.AddControllers();
+                    services.AddControllersWithViews(); // For MVC views
 
                     services.AddDbContext<AppDbContext>(options =>
                         options.UseSqlServer("Server=localhost;Database=starwarsarmybuilder_database;User Id=lbkenny7;Password=Burrnet7;TrustServerCertificate=True;"));
@@ -30,9 +31,16 @@ public class Program
                 {
                     app.UseCors("AllowLocalhost");
                     app.UseRouting();
-                    app.UseStaticFiles();
+                    app.UseStaticFiles();  // Ensure static files (like index.html) are served
+
                     app.UseEndpoints(endpoints =>
                     {
+                        // For an MVC app, default route configuration
+                        endpoints.MapControllerRoute(
+                            name: "default",
+                            pattern: "{controller=SeparatistUnit}/{action=Index}/{id?}");
+
+                        // Map API controllers (if you also have API controllers)
                         endpoints.MapControllers();
                     });
                 });
