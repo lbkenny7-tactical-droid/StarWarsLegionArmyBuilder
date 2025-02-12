@@ -35,10 +35,8 @@
     <p>Created by You</p>
   </footer>
 
-  <!-- External script reference moved here -->
   <script src="script.js"></script>
 
-  <!-- Your inline script comes after script.js -->
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       let commanderCount = 0;
@@ -53,7 +51,7 @@
           buttonContainer.innerHTML = '';
 
           data.forEach(unit => {
-            separatist_units(buttonContainer, unit); // Now this function should be available
+            separatist_units(buttonContainer, unit);
           });
         })
         .catch(error => {
