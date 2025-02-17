@@ -1,6 +1,6 @@
 Hello,
 
-This project is currently a work in progress. Once this application is up and running as a non locally hosted website, I'll update this README with instructions to implement and run this application.
+This repository is currently being used as old storage for the Legion Command website. Please visit the Legion Command repository for updates on that repository, or go strait to work in progress website here: https://legioncommand20250212141219-geb5fcesh9befgbb.australiaeast-01.azurewebsites.net/  
 
 Kind Regards,
 
